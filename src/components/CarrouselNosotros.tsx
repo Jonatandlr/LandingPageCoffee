@@ -1,4 +1,6 @@
+"use client"
 import { Card, CardContent } from "@/components/ui/card"
+import Autoplay from "embla-carousel-autoplay"
 import {
     Carousel,
     CarouselContent,
@@ -15,6 +17,11 @@ export default function CarrouselNosotros() {
                 opts={{
                     align: "start",
                 }}
+                plugins={[
+                    Autoplay({
+                        delay: 4000,
+                    }),
+                ]}
                 className="w-full max-w-sm"
             >
                 <CarouselContent>
