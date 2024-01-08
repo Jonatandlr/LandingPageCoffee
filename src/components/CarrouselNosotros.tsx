@@ -28,6 +28,7 @@ export default function CarrouselNosotros() {
                                             fill
                                             alt="Picture of the author"
                                             className="object-cover"
+                                            sizes="(max-width: 640px) 100vw, 640px"
                                         />
                                     </CardContent>
                                 </Card>
@@ -35,8 +36,11 @@ export default function CarrouselNosotros() {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <div className="md:flex hidden">
+                    <CarouselPrevious />
+                    <CarouselNext />
+                </div>
+
             </Carousel>
         </div>
     )

@@ -49,12 +49,12 @@ export default function FormiContact() {
           <Form className="flex flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-center">
               <h2 className="max-w-4xl text-2xl font-normal md:text-3xl lg:text-4xl mb-5 flex justify-start">Contactanos</h2>
-              <p className="mt-4 mb-8 mx-auto max-w-lg text-start">
+              <p className="mt-4 mb-8 mx-auto max-w-lg md:text-start text-center">
                 Si tienes alguna duda o sugerencia, no dudes en contactarnos. Estaremos encantados de atenderte.
               </p>
             </div>
 
-            <div className="flex items-start justify-center ">
+            <div className="flex md:flex-row flex-col md:mb-0 mb-5 items-start justify-center ">
               <div className="mr-5 ">
                 <div className="flex flex-col mb-5">
                   <label htmlFor="Name" className="text-gray-700">Nombre</label>

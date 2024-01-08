@@ -39,7 +39,7 @@ export default function NavBar() {
                         <h1 className="ml-2 text-xl font-bold">CAFÉ CACAO</h1>
                     </div>
 
-                    <div className="flex items-center">
+                    <div className=" items-center md:flex hidden">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.name}

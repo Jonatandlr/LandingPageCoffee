@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils'
 import NavBar from '@/components/NavBar'
 import { Toaster } from "@/components/ui/toaster"
 
-const poppins = Poppins({ subsets: ['latin'], weight: ["400", "500", "600", "700"] })
+const poppins = Poppins({ subsets: ['latin'], weight: ['200','300',"400", "500", "600", "700"] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
