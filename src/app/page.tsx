@@ -51,7 +51,7 @@ export default function page() {
             </p>
           </div>
 
-          <div>
+          <div className="z-10">
             <CarrouselNosotros />
           </div>
         </MaxWithWrapper>
@@ -61,8 +61,9 @@ export default function page() {
 
 
       <div id="Contactanos" className="w-full mb-20 mt-16">
-        <FormContact />
-
+        <MaxWithWrapper className="mb-12  md:mt-10   flex md:flex-row flex-col  items-center justify-around text-center" >
+          <FormContact />
+        </MaxWithWrapper>
       </div>
     </div>
   )

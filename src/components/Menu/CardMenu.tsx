@@ -1,21 +1,22 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import React from 'react'
+
 
 interface CardMenuProps {
     title: string
     description: string
     image: string
-    link: string
+    visibleState:(info: string) => void
 }
-export default function CardMenu({ title, description, image,link }: CardMenuProps) {
+export default function CardMenu({ title, description, image, visibleState}: CardMenuProps) {
+    
 
     return (
         <div className=" lg:w-[300px] md:w-full h-[300px] flex text-center border-2 rounded-[20px] overflow-hidden relative group">
-            <Link 
-                href={link}
-                passHref
-                target='_blank'
+            <button 
+               onClick={() => visibleState(title)}
             >
                 <Image
                     src={image}
@@ -29,8 +30,8 @@ export default function CardMenu({ title, description, image,link }: CardMenuPro
                     <h3 className="lg:text-3xl text-2xl font-bold">{title}</h3>
                     <p className="lg:text-xl text-lg lg:max-w-lg max-w-52">{description}</p>
                 </div>
-            </Link>
-
+            </button>
+            
         </div>
     )
 }
